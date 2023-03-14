@@ -1,0 +1,6 @@
+#!/bin/bash
+read A
+touch $A
+echo "#!/bin/bash" > $A
+chmod u+x $A
+vi $A
