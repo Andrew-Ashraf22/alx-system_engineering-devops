@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# prints ip and http status
+
+awk '{s[$1" "$9]++} END {for (h in s) print s[h], h}' apache-access.log | sort -rn
