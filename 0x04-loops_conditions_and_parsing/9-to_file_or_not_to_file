@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # prints provides info for school file
 
-f="school.txt"
+f="school"
 
 if [ -e "$f" ];
 then

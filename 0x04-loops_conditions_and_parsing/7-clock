@@ -4,10 +4,11 @@
 h=0
 while [ $h -lt 12 ];
 do
+    echo "Hour: $hour"
     min=1
-    while [ $min -lt 60 ];
+    while [ $min -le 60 ];
 do
-        printf "%02d:%02d\n" $h $min
+        echo "$min"
         ((min++))
     done
     ((h++))
