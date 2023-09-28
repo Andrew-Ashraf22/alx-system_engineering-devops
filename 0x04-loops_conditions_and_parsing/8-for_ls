@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# prints files in the dir
+
+for f in *;
+do
+    if [ -f "$f" ] && [[ $f == *-* ]];
+then
+        name=${f#*-}
+        echo "$name"
+    fi
+done
