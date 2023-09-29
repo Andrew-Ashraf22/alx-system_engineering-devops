@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# prints im invincible when trying to kill
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+  trap 'echo "I am invincible!!!"' SIGTERM 
+done
