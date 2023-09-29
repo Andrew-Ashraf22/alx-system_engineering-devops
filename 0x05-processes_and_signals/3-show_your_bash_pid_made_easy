@@ -1,0 +1,14 @@
+#!/bin/env bash
+# print the pid
+
+pid1=$$
+
+pids=$(pgrep bash)
+for pid in $pids;
+do
+  if [ "$pid" != "$pid1" ];
+then
+    proc=$(ps -p $pid -o comm=)
+    echo "$pid $proc"
+  fi
+done
